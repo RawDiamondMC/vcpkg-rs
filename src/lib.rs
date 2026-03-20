@@ -191,7 +191,7 @@ pub struct Library {
 
 #[derive(Clone)]
 struct TargetTriplet {
-    triplet: String,
+    pub triplet: String,
     is_static: bool,
     lib_suffix: String,
     strip_lib_prefix: bool,
