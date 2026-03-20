@@ -190,7 +190,7 @@ pub struct Library {
 }
 
 #[derive(Clone)]
-struct TargetTriplet {
+pub struct TargetTriplet {
     pub triplet: String,
     is_static: bool,
     lib_suffix: String,
