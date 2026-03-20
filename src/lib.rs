@@ -880,7 +880,7 @@ impl Config {
         }
     }
 
-    fn get_target_triplet(&mut self) -> Result<TargetTriplet, Error> {
+    pub fn get_target_triplet(&mut self) -> Result<TargetTriplet, Error> {
         if self.target.is_none() {
             let target = if let Ok(triplet_str) = env::var("VCPKGRS_TRIPLET") {
                 triplet_str.into()
